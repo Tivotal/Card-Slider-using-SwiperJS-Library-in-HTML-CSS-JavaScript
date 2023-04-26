@@ -1,0 +1,167 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "POppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+section {
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 950px;
+}
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #a32cc4;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .content {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .content .image {
+  height: 140px;
+  width: 140px;
+  background: #a32cc4;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.card .content .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card .content .icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .content .icons i {
+  margin-top: 10px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s linear;
+}
+
+.card .content .icons i:hover {
+  opacity: 1;
+}
+
+.card .content .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card .content .details .name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.card .content .details .job {
+  font-size: 15px;
+  font-weight: 500;
+  color: #606060;
+}
+
+.card .content .stars {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.card .content .stars i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #a32cc4;
+}
+
+.card .content .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card .content .buttons button {
+  padding: 8px 22px;
+  outline: none;
+  border: none;
+  background: #a32cc4;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.card .content .buttons button:hover {
+  background: #710193;
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 7px;
+  border-radius: 25px;
+  background: #a32cc4;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #a32cc4;
+  transition: all 0.3s linear;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #710193;
+}
